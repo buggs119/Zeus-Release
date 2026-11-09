@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "llama_cpp": {
+    "repo": "ggml-org/llama.cpp",
+    "assets": {
+      "windows-cuda": ["^llama-b\\d+-bin-win-cuda-12\\.4-x64\\.zip$", "^cudart-llama-bin-win-cuda-12\\.4-x64\\.zip$"],
+      "windows-vulkan": ["^llama-b\\d+-bin-win-vulkan-x64\\.zip$"],
+      "windows-cpu": ["^llama-b\\d+-bin-win-cpu-x64\\.zip$"],
+      "macos-metal": ["^llama-b\\d+-bin-macos-arm64\\.tar\\.gz$"],
+      "macos-cpu": ["^llama-b\\d+-bin-macos-x64\\.tar\\.gz$"],
+      "linux-cuda": ["^llama-b\\d+-bin-ubuntu-cuda-12\\.8-x64\\.tar\\.gz$", "^cudart-llama-b\\d+-bin-ubuntu-cuda-12\\.8-x64\\.tar\\.gz$"],
+      "linux-vulkan": ["^llama-b\\d+-bin-ubuntu-vulkan-x64\\.tar\\.gz$"],
+      "linux-cpu": ["^llama-b\\d+-bin-ubuntu-x64\\.tar\\.gz$"]
+    }
+  },
+  "models": [
+    {
+      "id": "qwen3-coder-next",
+      "name": "Qwen3 Coder Next (80B MoE)",
+      "description": "Large mixture-of-experts coding model. Best quality for workstations with 48 GB+ of VRAM, or a 24 GB GPU plus 64 GB RAM.",
+      "hf_repo": "unsloth/Qwen3-Coder-Next-GGUF",
+      "quant": "UD-Q4_K_XL",
+      "size_gb": 49.6,
+      "params_b": 79.7,
+      "active_params_b": 3,
+      "moe": true,
+      "context": 262144,
+      "tool_score": 9,
+      "coding_score": 10
+    },
+    {
+      "id": "qwen3.8-27b",
+      "name": "Qwen3.8 27B",
+      "description": "Strong dense all-rounder with reliable tool calling. Ideal for 24 GB GPUs.",
+      "hf_repo": "unsloth/Qwen3.8-27B-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 16.5,
+      "params_b": 27.3,
+      "moe": false,
+      "context": 262144,
+      "tool_score": 9,
+      "coding_score": 9
+    },
+    {
+      "id": "qwen3.6-35b-a3b",
+      "name": "Qwen3.6 35B-A3B (MoE)",
+      "description": "Fast mixture-of-experts model. Runs well split across a mid-range GPU and system RAM.",
+      "hf_repo": "unsloth/Qwen3.6-35B-A3B-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 22.1,
+      "params_b": 34.7,
+      "active_params_b": 3,
+      "moe": true,
+      "context": 262144,
+      "tool_score": 8,
+      "coding_score": 8
+    },
+    {
+      "id": "gemma-4-26b-a4b",
+      "name": "Gemma 4 26B-A4B (MoE)",
+      "description": "Google mixture-of-experts model. Good speed on 16 GB GPUs.",
+      "hf_repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 16.9,
+      "params_b": 25.2,
+      "active_params_b": 4,
+      "moe": true,
+      "context": 262144,
+      "tool_score": 7,
+      "coding_score": 7
+    },
+    {
+      "id": "gemma-4-12b",
+      "name": "Gemma 4 12B",
+      "description": "Mid-size dense model for 8-12 GB GPUs.",
+      "hf_repo": "unsloth/gemma-4-12b-it-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 7.1,
+      "params_b": 11.9,
+      "moe": false,
+      "context": 262144,
+      "tool_score": 6,
+      "coding_score": 6
+    },
+    {
+      "id": "qwen3.5-9b",
+      "name": "Qwen3.5 9B",
+      "description": "Small model with dependable tool calling for 8 GB GPUs.",
+      "hf_repo": "unsloth/Qwen3.5-9B-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 5.7,
+      "params_b": 9.0,
+      "moe": false,
+      "context": 262144,
+      "tool_score": 7,
+      "coding_score": 6
+    },
+    {
+      "id": "qwen3.5-4b",
+      "name": "Qwen3.5 4B",
+      "description": "Tiny model for laptops and CPU-only machines. Handles simple tasks.",
+      "hf_repo": "unsloth/Qwen3.5-4B-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 2.7,
+      "params_b": 4.2,
+      "moe": false,
+      "context": 262144,
+      "tool_score": 5,
+      "coding_score": 4
+    }
+  ]
+}
