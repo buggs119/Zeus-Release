@@ -1,23 +1,23 @@
 {
-  "version": "1.0.8",
-  "notes": "Zeus v1.0.8. See https://github.com/buggs119/Zeus-Release/releases/tag/v1.0.8",
-  "pub_date": "2026-11-21T03:17:48Z",
+  "version": "1.0.9",
+  "notes": "Zeus v1.0.9. See https://github.com/buggs119/Zeus-Release/releases/tag/v1.0.9",
+  "pub_date": "2026-11-23T00:56:33Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURU9SS2hVNlUzYUxxTUlCRXNPVFJSS20zMU9rWktwUGtDT3JmaFU5OTQ1b1RjSFFOY2dRK3oreU8wSng4aXowSE12MVRZMzllVkt4ZUcxMlYvajZ1bWtSVkdEYXgvS3dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjMwOTgwCWZpbGU6WmV1c18xLjAuOF94NjQtc2V0dXAuZXhlCXZlcnNpb246MS4wLjgKYkl4dzE4UW00Skc0azloU2lmYjh0VWFwNE9LcTJlOU8xVW10YlJWbG5qMTA4aGN0U20wQzlDRHI0Q1RaUEpoRVlYVjVSRkZoVWRVdVRhYm5Iam1pQUE9PQo=",
-      "url": "https://github.com/buggs119/Zeus-Release/releases/download/v1.0.8/Zeus_1.0.8_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURU9SS2hVNlUzYUpSaDVycGkrMmFtMG12dFF2N2FPNG5jTW5WQXBXMnpIMG9sY3dGRTZyOVQxdWJwd21yVy8wbFJIcDBEbXNSM25PSzFMT2FxM3lvUDgwQ01kd0FueVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Mzk1MjkyCWZpbGU6WmV1c18xLjAuOV94NjQtc2V0dXAuZXhlCXZlcnNpb246MS4wLjkKS1htb0lRMGVLdmdqRjJxdkFNbnVUY0JRUnU1Ky8xU3lEQlNWK2tXRENIbGg2YW8yYkpTTERhSm5ldzBlNExGeUg5V215VTlyc0p2c1lEOFF2THhYQUE9PQo=",
+      "url": "https://github.com/buggs119/Zeus-Release/releases/download/v1.0.9/Zeus_1.0.9_x64-setup.exe"
     },
     "windows-x86_64-nsis": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURU9SS2hVNlUzYUxxTUlCRXNPVFJSS20zMU9rWktwUGtDT3JmaFU5OTQ1b1RjSFFOY2dRK3oreU8wSng4aXowSE12MVRZMzllVkt4ZUcxMlYvajZ1bWtSVkdEYXgvS3dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjMwOTgwCWZpbGU6WmV1c18xLjAuOF94NjQtc2V0dXAuZXhlCXZlcnNpb246MS4wLjgKYkl4dzE4UW00Skc0azloU2lmYjh0VWFwNE9LcTJlOU8xVW10YlJWbG5qMTA4aGN0U20wQzlDRHI0Q1RaUEpoRVlYVjVSRkZoVWRVdVRhYm5Iam1pQUE9PQo=",
-      "url": "https://github.com/buggs119/Zeus-Release/releases/download/v1.0.8/Zeus_1.0.8_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURU9SS2hVNlUzYUpSaDVycGkrMmFtMG12dFF2N2FPNG5jTW5WQXBXMnpIMG9sY3dGRTZyOVQxdWJwd21yVy8wbFJIcDBEbXNSM25PSzFMT2FxM3lvUDgwQ01kd0FueVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Mzk1MjkyCWZpbGU6WmV1c18xLjAuOV94NjQtc2V0dXAuZXhlCXZlcnNpb246MS4wLjkKS1htb0lRMGVLdmdqRjJxdkFNbnVUY0JRUnU1Ky8xU3lEQlNWK2tXRENIbGg2YW8yYkpTTERhSm5ldzBlNExGeUg5V215VTlyc0p2c1lEOFF2THhYQUE9PQo=",
+      "url": "https://github.com/buggs119/Zeus-Release/releases/download/v1.0.9/Zeus_1.0.9_x64-setup.exe"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURU9SS2hVNlUzYUt4ZlRSRzNya0NuSk5WTGdMK3d1RWRJNDJIaEZoY0dUVVZLOUFNNk1mbVo0NG5nVzBPTktGc3dSUVRGeWZkbHdRenBDOFpFQ2pEbFQrWWd2QmlQYVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjMwMzUxCWZpbGU6WmV1cy5hcHAudGFyLmd6CXZlcnNpb246MS4wLjgKckJxMERMSy9PSG0zZ0NGN0s4RnQydFJOSnlFZlkwVUFuUEQ1K0Z6V2hXbHYwcDhpaWlZZmdPYnRUQVVDaHBxZFhxWWhIMTBUSGNhSTl3S1luYjBTQ0E9PQo=",
-      "url": "https://github.com/buggs119/Zeus-Release/releases/download/v1.0.8/Zeus_1.0.8_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURU9SS2hVNlUzYUVQQjBoTDBOTXdRRnp3MVZHVVBDM1VncS9Kb1pYd09WUHhBTVlWT2dtT21YWTRkZktUVUVUbGVaalQxa0wzaUpFZFFGemxkTmdIajZRR3p2RW53SWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Mzk0MzczCWZpbGU6WmV1cy5hcHAudGFyLmd6CXZlcnNpb246MS4wLjkKZkpCcEEvVDFGKytGR25Nb04wTVNkWHdQeC9MQ0UrVWJQcVYvS2loTGk2MEo2VE5pNU9wcGcwakVJYjhFS0NUTHo2VzBMZ0dyaUZwcStmMzhoa0xQQWc9PQo=",
+      "url": "https://github.com/buggs119/Zeus-Release/releases/download/v1.0.9/Zeus_1.0.9_aarch64.app.tar.gz"
     },
     "darwin-aarch64-app": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURU9SS2hVNlUzYUt4ZlRSRzNya0NuSk5WTGdMK3d1RWRJNDJIaEZoY0dUVVZLOUFNNk1mbVo0NG5nVzBPTktGc3dSUVRGeWZkbHdRenBDOFpFQ2pEbFQrWWd2QmlQYVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjMwMzUxCWZpbGU6WmV1cy5hcHAudGFyLmd6CXZlcnNpb246MS4wLjgKckJxMERMSy9PSG0zZ0NGN0s4RnQydFJOSnlFZlkwVUFuUEQ1K0Z6V2hXbHYwcDhpaWlZZmdPYnRUQVVDaHBxZFhxWWhIMTBUSGNhSTl3S1luYjBTQ0E9PQo=",
-      "url": "https://github.com/buggs119/Zeus-Release/releases/download/v1.0.8/Zeus_1.0.8_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURU9SS2hVNlUzYUVQQjBoTDBOTXdRRnp3MVZHVVBDM1VncS9Kb1pYd09WUHhBTVlWT2dtT21YWTRkZktUVUVUbGVaalQxa0wzaUpFZFFGemxkTmdIajZRR3p2RW53SWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Mzk0MzczCWZpbGU6WmV1cy5hcHAudGFyLmd6CXZlcnNpb246MS4wLjkKZkpCcEEvVDFGKytGR25Nb04wTVNkWHdQeC9MQ0UrVWJQcVYvS2loTGk2MEo2VE5pNU9wcGcwakVJYjhFS0NUTHo2VzBMZ0dyaUZwcStmMzhoa0xQQWc9PQo=",
+      "url": "https://github.com/buggs119/Zeus-Release/releases/download/v1.0.9/Zeus_1.0.9_aarch64.app.tar.gz"
     }
   }
 }
