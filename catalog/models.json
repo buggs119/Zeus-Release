@@ -1,19 +1,65 @@
 {
-  "version": 1,
+  "version": 2,
   "llama_cpp": {
     "repo": "ggml-org/llama.cpp",
     "assets": {
-      "windows-cuda": ["^llama-b\\d+-bin-win-cuda-12\\.4-x64\\.zip$", "^cudart-llama-bin-win-cuda-12\\.4-x64\\.zip$"],
-      "windows-vulkan": ["^llama-b\\d+-bin-win-vulkan-x64\\.zip$"],
-      "windows-cpu": ["^llama-b\\d+-bin-win-cpu-x64\\.zip$"],
-      "macos-metal": ["^llama-b\\d+-bin-macos-arm64\\.tar\\.gz$"],
-      "macos-cpu": ["^llama-b\\d+-bin-macos-x64\\.tar\\.gz$"],
-      "linux-cuda": ["^llama-b\\d+-bin-ubuntu-cuda-12\\.8-x64\\.tar\\.gz$", "^cudart-llama-b\\d+-bin-ubuntu-cuda-12\\.8-x64\\.tar\\.gz$"],
-      "linux-vulkan": ["^llama-b\\d+-bin-ubuntu-vulkan-x64\\.tar\\.gz$"],
-      "linux-cpu": ["^llama-b\\d+-bin-ubuntu-x64\\.tar\\.gz$"]
+      "windows-cuda": [
+        "^llama-b\\d+-bin-win-cuda-12\\.4-x64\\.zip$",
+        "^cudart-llama-bin-win-cuda-12\\.4-x64\\.zip$"
+      ],
+      "windows-vulkan": [
+        "^llama-b\\d+-bin-win-vulkan-x64\\.zip$"
+      ],
+      "windows-cpu": [
+        "^llama-b\\d+-bin-win-cpu-x64\\.zip$"
+      ],
+      "macos-metal": [
+        "^llama-b\\d+-bin-macos-arm64\\.tar\\.gz$"
+      ],
+      "macos-cpu": [
+        "^llama-b\\d+-bin-macos-x64\\.tar\\.gz$"
+      ],
+      "linux-cuda": [
+        "^llama-b\\d+-bin-ubuntu-cuda-12\\.8-x64\\.tar\\.gz$",
+        "^cudart-llama-b\\d+-bin-ubuntu-cuda-12\\.8-x64\\.tar\\.gz$"
+      ],
+      "linux-vulkan": [
+        "^llama-b\\d+-bin-ubuntu-vulkan-x64\\.tar\\.gz$"
+      ],
+      "linux-cpu": [
+        "^llama-b\\d+-bin-ubuntu-x64\\.tar\\.gz$"
+      ]
     }
   },
   "models": [
+    {
+      "id": "glm-4.5-air",
+      "name": "GLM-4.5 Air (106B MoE)",
+      "description": "Large mixture-of-experts model from Z.ai, strong at agentic coding and tool use. For workstations with 64 GB+ of RAM plus a 16 GB+ GPU.",
+      "hf_repo": "unsloth/GLM-4.5-Air-GGUF",
+      "quant": "UD-Q4_K_XL",
+      "size_gb": 67.7,
+      "params_b": 106,
+      "active_params_b": 12,
+      "moe": true,
+      "context": 131072,
+      "tool_score": 8,
+      "coding_score": 8
+    },
+    {
+      "id": "gpt-oss-120b",
+      "name": "gpt-oss 120B (MoE)",
+      "description": "OpenAI's larger open-weight model. Reliable tool calling and good reasoning; needs about 64 GB of RAM plus a GPU.",
+      "hf_repo": "unsloth/gpt-oss-120b-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 62.8,
+      "params_b": 116.8,
+      "active_params_b": 5.1,
+      "moe": true,
+      "context": 131072,
+      "tool_score": 8,
+      "coding_score": 8
+    },
     {
       "id": "qwen3-coder-next",
       "name": "Qwen3 Coder Next (80B MoE)",
@@ -27,19 +73,6 @@
       "context": 262144,
       "tool_score": 9,
       "coding_score": 10
-    },
-    {
-      "id": "qwen3.8-27b",
-      "name": "Qwen3.8 27B",
-      "description": "Strong dense all-rounder with reliable tool calling. Ideal for 24 GB GPUs.",
-      "hf_repo": "unsloth/Qwen3.8-27B-GGUF",
-      "quant": "Q4_K_M",
-      "size_gb": 16.5,
-      "params_b": 27.3,
-      "moe": false,
-      "context": 262144,
-      "tool_score": 9,
-      "coding_score": 9
     },
     {
       "id": "qwen3.6-35b-a3b",
@@ -56,6 +89,48 @@
       "coding_score": 8
     },
     {
+      "id": "granite-4-h-small",
+      "name": "Granite 4.0 H Small (MoE)",
+      "description": "IBM's hybrid mixture-of-experts model, tuned for tool calling and long documents. Light on memory for its size.",
+      "hf_repo": "unsloth/granite-4.0-h-small-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 19.6,
+      "params_b": 32.2,
+      "active_params_b": 9,
+      "moe": true,
+      "context": 131072,
+      "tool_score": 7,
+      "coding_score": 5
+    },
+    {
+      "id": "qwen3-30b-a3b",
+      "name": "Qwen3 30B-A3B Instruct (MoE)",
+      "description": "General-purpose mixture-of-experts model: writing, research and planning, with solid tool use.",
+      "hf_repo": "unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 18.6,
+      "params_b": 30.5,
+      "active_params_b": 3.3,
+      "moe": true,
+      "context": 262144,
+      "tool_score": 7,
+      "coding_score": 6
+    },
+    {
+      "id": "qwen3-coder-30b-a3b",
+      "name": "Qwen3 Coder 30B-A3B (MoE)",
+      "description": "Coding-tuned mixture-of-experts model. Fast for its size and good at multi-file edits.",
+      "hf_repo": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+      "quant": "UD-Q4_K_XL",
+      "size_gb": 17.7,
+      "params_b": 30.5,
+      "active_params_b": 3.3,
+      "moe": true,
+      "context": 262144,
+      "tool_score": 7,
+      "coding_score": 7
+    },
+    {
       "id": "gemma-4-26b-a4b",
       "name": "Gemma 4 26B-A4B (MoE)",
       "description": "Google mixture-of-experts model. Good speed on 16 GB GPUs.",
@@ -68,6 +143,72 @@
       "context": 262144,
       "tool_score": 7,
       "coding_score": 7
+    },
+    {
+      "id": "qwen3.8-27b",
+      "name": "Qwen3.8 27B",
+      "description": "Strong dense all-rounder with reliable tool calling. Ideal for 24 GB GPUs.",
+      "hf_repo": "unsloth/Qwen3.8-27B-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 16.5,
+      "params_b": 27.3,
+      "moe": false,
+      "context": 262144,
+      "tool_score": 9,
+      "coding_score": 9
+    },
+    {
+      "id": "devstral-small",
+      "name": "Devstral Small 24B",
+      "description": "Mistral's model built for coding agents: reads codebases, edits files and runs tools.",
+      "hf_repo": "unsloth/Devstral-Small-2507-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 14.3,
+      "params_b": 23.6,
+      "moe": false,
+      "context": 131072,
+      "tool_score": 7,
+      "coding_score": 7
+    },
+    {
+      "id": "mistral-small-3.2",
+      "name": "Mistral Small 3.2 24B",
+      "description": "Well-rounded assistant model: writing, summaries and research, with reliable function calling.",
+      "hf_repo": "unsloth/Mistral-Small-3.2-24B-Instruct-2506-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 14.3,
+      "params_b": 24,
+      "moe": false,
+      "context": 131072,
+      "tool_score": 6,
+      "coding_score": 5
+    },
+    {
+      "id": "gpt-oss-20b",
+      "name": "gpt-oss 20B (MoE)",
+      "description": "OpenAI's smaller open-weight model. Quick, follows tool calls well; a good assistant model on 16 GB GPUs.",
+      "hf_repo": "unsloth/gpt-oss-20b-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 11.6,
+      "params_b": 20.9,
+      "active_params_b": 3.6,
+      "moe": true,
+      "context": 131072,
+      "tool_score": 7,
+      "coding_score": 6
+    },
+    {
+      "id": "qwen3-14b",
+      "name": "Qwen3 14B",
+      "description": "Mid-size general model that fits 12 GB GPUs; good for everyday assistant tasks.",
+      "hf_repo": "unsloth/Qwen3-14B-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 9.0,
+      "params_b": 14.8,
+      "moe": false,
+      "context": 40960,
+      "tool_score": 6,
+      "coding_score": 5
     },
     {
       "id": "gemma-4-12b",
@@ -107,6 +248,32 @@
       "context": 262144,
       "tool_score": 5,
       "coding_score": 4
+    },
+    {
+      "id": "qwen3-4b-2507",
+      "name": "Qwen3 4B Instruct",
+      "description": "Small and quick, for laptops and older GPUs. Fine for simple tasks.",
+      "hf_repo": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 2.5,
+      "params_b": 4.0,
+      "moe": false,
+      "context": 262144,
+      "tool_score": 4,
+      "coding_score": 4
+    },
+    {
+      "id": "qwen3-1.7b",
+      "name": "Qwen3 1.7B",
+      "description": "Tiny model for machines with very little memory. Basic answers only; long tasks will struggle.",
+      "hf_repo": "unsloth/Qwen3-1.7B-GGUF",
+      "quant": "Q4_K_M",
+      "size_gb": 1.1,
+      "params_b": 1.7,
+      "moe": false,
+      "context": 40960,
+      "tool_score": 3,
+      "coding_score": 2
     }
   ]
 }
